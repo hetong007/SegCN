@@ -1,0 +1,7 @@
+setwd('~/github/SegCN/')
+require(devtools)
+load_all()
+#ws = getDocDict(path='~/github/WordSplit/wuxia/',name='鹿鼎记',split=F)
+ws = getDocDict(file='~/github/WordSplit/wuxia/鹿鼎记.txt',split=F)
+ws = getPathDict(path='~/github/WordSplit/wuxia/',split=F)
+uws = getUniqDict(ws)
